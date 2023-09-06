@@ -21,6 +21,14 @@ header {
   width: 100%;
 }
 
+form{
+  padding: 0px 10px 0 10px;
+}
+
+label{
+  font-family: "PT Sans Narrow", sans-serif;
+}
+
 .left-header {
   display: flex;
   flex-wrap: wrap;
@@ -48,6 +56,7 @@ header {
 #add-icon,
 button div {
   color: #fff;
+  cursor: pointer;
 }
 
 .cards-container {
@@ -177,7 +186,7 @@ input:checked + .slider:before {
   margin-bottom: 10px;
 }
 
-.remove-button-container button {
+.remove-button-container button, .add-button-container button{
   background-color: #343333;
   padding: 5px 10px 5px 1px;
   display: flex;
@@ -189,13 +198,61 @@ input:checked + .slider:before {
   padding-left: 5px;
 }
 
-#delete-icon {
+#delete-icon, #add-icon {
   color: #fff;
   font-size: 15px;
 }
 
 .read-text{
   font-size: 1.1rem;
+}
+
+.form-container{
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 250px;
+  background-color: #FEFADC;
+  border: 1px solid #000;
+}
+
+.form-top{
+  display: flex;
+  justify-content: space-between;
+  padding: 3px 3px 0 10px;
+  margin-bottom: 15px;
+}
+
+.form-top button{
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+#close-icon{
+  font-size: 20px;
+}
+
+.add-book-text{
+  font-family: "PT Sans Narrow", sans-serif;
+  font-weight: 700;
+}
+
+.form-row{
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 10px;
+}
+
+.form-row input{
+  background-color: #dce9fe;
+}
+
+.form-modification{
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
 }
 
 @media screen and (max-width: 767px) {
