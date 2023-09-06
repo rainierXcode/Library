@@ -252,6 +252,7 @@ input:checked + .slider:before {
 .form-modification{
   display: flex;
   justify-content: space-between;
+  align-items: center;
   margin-bottom: 10px;
 }
 
@@ -272,7 +273,47 @@ input:checked + .slider:before {
     border-radius: 5px;
   }
 
-  #add-icon {
-    font-size: 35px;
+  .form-container{
+    width: 70%;
   }
+
+  
+  #close-icon{
+    font-size: 30px;
+  }
+  
+  .add-book-text{
+    font-size: 1.5rem;
+  }
+
+  .form-row label{
+    font-size: 1.3rem;
+  }
+  
+  
+  .form-row input{
+    background-color: #dce9fe;
+    height: 25px;
+  }
+
+  .form-read-text{
+    font-size: 1.3rem;
+  }
+
+  .switch{
+    width: 60px;
+    height: 34px;
+  }
+  
+  .slider:before{
+    height: 26px;
+    width: 26px;
+    left: 4px;
+    bottom: 4px;
+  }
+
+  #add-icon{
+    font-size: 20px;
+  }
+ 
 }
