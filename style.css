@@ -61,12 +61,14 @@ button div {
   padding-left: 40px;
   padding-right: 40px;
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(230px, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
   gap: 15px;
 }
 
 .card {
   padding-top: 15px;
+  padding-left: 10px;
+  padding-right: 10px;
   background-color: #edeba0;
   text-align: center;
   display: flex;
@@ -80,6 +82,10 @@ button div {
   font-weight: 700;
   font-size: 1.2rem;
   margin-bottom: 5px;
+  height: 3rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .author {
@@ -177,8 +183,6 @@ input:checked + .slider:before {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding-left: 10px;
-  padding-right: 10px;
   flex-wrap: wrap;
   margin-bottom: 10px;
 }

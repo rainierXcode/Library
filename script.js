@@ -162,9 +162,9 @@ function addBookToLibrary(event) {
 }
 
 function defaulBookToLibrary() {
-    let book1 = new Book("Victor Magtanggol", "GMA", "01/01/2022", 124, false);
-    let book2 = new Book("Encatadia", "GMA", "01/01/2022", 124, false);
-    let book3 = new Book("Voltes V", "GMA", "01/01/2022", 124, false);
+    let book1 = new Book("Clean Code: A Handbook of Agile Software Craftsmanship", "Robert C. Martin", "08/11/2008", 464, false);
+    let book2 = new Book("Python Crash Course", "Eric Matthes", "11/30/2015", 562, false);
+    let book3 = new Book("JavaScript: The Good Parts", "Douglas Crockford", "05/01/2008", 172, false);
 
     myLibrary.push(book1);
     myLibrary.push(book2);
