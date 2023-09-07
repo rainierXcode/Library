@@ -25,9 +25,6 @@ form{
   padding: 0px 10px 0 10px;
 }
 
-label{
-  font-family: "PT Sans Narrow", sans-serif;
-}
 
 .left-header {
   display: flex;
@@ -207,15 +204,31 @@ input:checked + .slider:before {
   font-size: 1.1rem;
 }
 
-.form-container{
+.form-container {
+  display: none;
   position: absolute;
   top: 40%;
   left: 50%;
-  transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%) scale(0.8); 
+  opacity: 0; 
   width: 250px;
   background-color: #FEFADC;
   border: 1px solid #000;
+  transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
 }
+
+.zoom-in {
+  opacity: 1;
+  transform: translate(-50%, -50%) scale(1);
+  display: block;
+}
+
+.zoom-out {
+  opacity: 0;
+  transform: translate(-50%, -50%) scale(0.8); 
+  display: none;
+}
+
 
 .form-top{
   display: flex;
@@ -237,6 +250,7 @@ input:checked + .slider:before {
 .add-book-text{
   font-family: "PT Sans Narrow", sans-serif;
   font-weight: 700;
+  font-size: 1.3rem;
 }
 
 .form-row{
@@ -247,7 +261,14 @@ input:checked + .slider:before {
 
 .form-row input{
   background-color: #dce9fe;
+  height: 20px;
 }
+
+.form-row label{
+  font-family: "PT Sans Narrow", sans-serif;
+  font-size: 1.1rem;
+}
+
 
 .form-modification{
   display: flex;
@@ -274,7 +295,7 @@ input:checked + .slider:before {
   }
 
   .form-container{
-    width: 70%;
+    width: 90%;
   }
 
   
@@ -300,17 +321,33 @@ input:checked + .slider:before {
     font-size: 1.3rem;
   }
 
+  form{
+    padding: 0px 20px 0 20px;
+  }
+
+  .form-modification{
+    margin-top: 30px;
+  }
+
   .switch{
     width: 60px;
-    height: 34px;
+    height: 25px;
   }
   
+  
   .slider:before{
-    height: 26px;
-    width: 26px;
-    left: 4px;
-    bottom: 4px;
+    height: 20px;
+    width: 20px;
+    left: 2px;
+    bottom: 3px;
   }
+
+  input:checked + .slider:before {
+    -webkit-transform: translateX(32px);
+    -ms-transform: translateX(32px);
+    transform: translateX(32px);
+  }
+  
 
   #add-icon{
     font-size: 20px;

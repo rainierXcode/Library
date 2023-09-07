@@ -8,6 +8,7 @@
       href="https://fonts.googleapis.com/icon?family=Material+Icons"
       rel="stylesheet"
     />
+    <script src="script.js" defer></script>
     <title>Library</title>
   </head>
   <body>
@@ -19,7 +20,7 @@
 
       <div class="right-header">
         <div class="add-button">
-          <button>
+          <button id="add-book-button">
             <i class="material-icons" id="add-icon">add</i>
             <div>New Book</div>
           </button>
@@ -28,7 +29,7 @@
     </header>
 
     <section class="cards-container">
-      <div class="card" id="card-1">
+      <div class="card">
         <div class="title">Victor Magtangol</div>
         <div class="author">By GMA</div>
         <div class="published">Published: 01/01/2022</div>
@@ -46,7 +47,7 @@
           </div>
 
           <div class="remove-button-container">
-            <button>
+            <button class="delete-item-button">
               <i class="material-icons" id="delete-icon">delete</i>
               <div>Delete Item</div>
             </button>
@@ -54,8 +55,8 @@
         </div>
       </div>
 
-      <div class="card" id="card-1">
-        <div class="title">Victor Magtangol</div>
+      <div class="card">
+        <div class="title">Encatadia</div>
         <div class="author">By GMA</div>
         <div class="published">Published: 01/01/2022</div>
         <div class="pages">124 pages</div>
@@ -72,7 +73,7 @@
           </div>
 
           <div class="remove-button-container">
-            <button>
+            <button class="delete-item-button">
               <i class="material-icons" id="delete-icon">delete</i>
               <div>Delete Item</div>
             </button>
@@ -80,8 +81,8 @@
         </div>
       </div>
 
-      <div class="card" id="card-1">
-        <div class="title">Victor Magtangol</div>
+      <div class="card">
+        <div class="title">Voltes V</div>
         <div class="author">By GMA</div>
         <div class="published">Published: 01/01/2022</div>
         <div class="pages">124 pages</div>
@@ -98,7 +99,7 @@
           </div>
 
           <div class="remove-button-container">
-            <button>
+            <button class="delete-item-button">
               <i class="material-icons" id="delete-icon">delete</i>
               <div>Delete Item</div>
             </button>
@@ -111,7 +112,7 @@
       <div class="form-top">
         <div class="add-book-text">Add Book</div>
         <div>
-          <button>
+          <button id="close-icon-button">
             <i class="material-icons" id="close-icon">close</i>
           </button>
         </div>
@@ -120,12 +121,12 @@
       <form action="">
         <div class="form-row">
           <label for="title_">Title</label>
-          <input type="text" id="title_" placeholder="Title" />
+          <input type="text" id="title_" placeholder="Title" required/>
         </div>
 
         <div class="form-row">
           <label for="author_">Author</label>
-          <input type="text" id="author_" placeholder="Author Name" />
+          <input type="text" id="author_" placeholder="Author Name"/>
         </div>
 
         <div class="form-row">
@@ -135,7 +136,7 @@
 
         <div class="form-row">
           <label for="pages_">Pages</label>
-          <input type="number" id="pages_" placeholder="Pages" />
+          <input type="number" id="pages_" placeholder="Pages" required/>
         </div>
 
         <div class="form-modification">
