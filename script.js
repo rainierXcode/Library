@@ -24,8 +24,6 @@ stats.addEventListener('change', (event) => {
     } else {
         isFormRead = false;
     }
-
-    console.log(isFormRead);
 });
 
 function addCardToDom(title, author, publish, pages, isRead) {
@@ -170,6 +168,7 @@ function defaulBookToLibrary() {
     myLibrary.push(book2);
     myLibrary.push(book3);
     dynamicReadStatus();
+    
 }
 
 defaulBookToLibrary();
@@ -200,6 +199,7 @@ function dynamicReadStatus() {
     cards.forEach((card) => {
         const readStatus = card.querySelector('.read-status');
         readStatus.addEventListener("change", (event) => {
+            
             let isRead = false;
             if (event.target.checked) {
                 isRead = true;
