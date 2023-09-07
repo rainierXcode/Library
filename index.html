@@ -30,7 +30,7 @@
 
     <section class="cards-container">
       <div class="card">
-        <div class="title">Victor Magtangol</div>
+        <div class="title">Victor Magtanggol</div>
         <div class="author">By GMA</div>
         <div class="published">Published: 01/01/2022</div>
         <div class="pages">124 pages</div>
@@ -40,7 +40,7 @@
             <div class="read-text">Read</div>
             <div class="read-button">
               <label class="switch">
-                <input type="checkbox" />
+                <input type="checkbox" class="read-status" />
                 <span class="slider round"></span>
               </label>
             </div>
@@ -66,7 +66,7 @@
             <div class="read-text">Read</div>
             <div class="read-button">
               <label class="switch">
-                <input type="checkbox" />
+                <input type="checkbox"  class="read-status"/>
                 <span class="slider round"></span>
               </label>
             </div>
@@ -92,7 +92,7 @@
             <div class="read-text">Read</div>
             <div class="read-button">
               <label class="switch">
-                <input type="checkbox" />
+                <input type="checkbox"  class="read-status"/>
                 <span class="slider round"></span>
               </label>
             </div>
@@ -118,25 +118,25 @@
         </div>
       </div>
 
-      <form action="">
+      <form id="myForm">
         <div class="form-row">
           <label for="title_">Title</label>
-          <input type="text" id="title_" placeholder="Title" required/>
+          <input type="text" id="title_" name="title_" placeholder="Title" required autocomplete="off"/>
         </div>
 
         <div class="form-row">
           <label for="author_">Author</label>
-          <input type="text" id="author_" placeholder="Author Name"/>
+          <input type="text" id="author_"  name="author_" placeholder="Author Name" autocomplete="off"/>
         </div>
 
         <div class="form-row">
           <label for="publish_">Published Date</label>
-          <input type="date" id="publish_" placeholder="Published" />
+          <input type="date" id="publish_" name="publish_" placeholder="Published" />
         </div>
 
         <div class="form-row">
           <label for="pages_">Pages</label>
-          <input type="number" id="pages_" placeholder="Pages" required/>
+          <input type="number" id="pages_" name="pages_" placeholder="Pages" required autocomplete="off"/>
         </div>
 
         <div class="form-modification">
@@ -144,14 +144,14 @@
             <div class="read-text form-read-text">Read</div>
             <div class="read-button">
               <label class="switch">
-                <input type="checkbox" />
+                <input type="checkbox" id="form-read-status"/>
                 <span class="slider round"></span>
               </label>
             </div>
           </div>
 
           <div class="add-button-container">
-            <button>
+            <button id="submit-form-button" type="submit">
               <i class="material-icons" id="add-icon">library_add</i>
               <div>Add Item</div>
             </button>

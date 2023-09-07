@@ -328,7 +328,7 @@ input:checked + .slider:before {
   .form-modification{
     margin-top: 30px;
   }
-
+/* 
   .switch{
     width: 60px;
     height: 25px;
@@ -347,7 +347,7 @@ input:checked + .slider:before {
     -ms-transform: translateX(32px);
     transform: translateX(32px);
   }
-  
+   */
 
   #add-icon{
     font-size: 20px;
