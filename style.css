@@ -219,6 +219,7 @@ input:checked + .slider:before {
   background-color: #FEFADC;
   border: 1px solid #000;
   transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
+  margin-bottom: 15px;
 }
 
 .zoom-in {
